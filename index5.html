@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals Statement</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let a = prompt("Enter Your age ")
+    a = Number.parseInt(a)
+
+    if (a < 0) {
+        alert("This is not a valid age")
+    }
+    else if (a < 9) {
+        alert("You are a Kid.")
+
+    }
+    else if (a < 18 && a >= 9) {
+        alert("You can't drive.")
+
+    }
+    else if (a > 18) {
+        alert("You can drive.")
+
+    }
+
+    console.log("Done")
+    alert("Close the Program")
+
+    //Switch Case Statement in Js
+
+    let name = "raftaar"
+    switch (name) {
+        case "naman":
+            console.log("Name is naman")
+        case "amitab":
+            console.log("Name is amitab")
+        case "rohan":
+            console.log("Name is rohan")
+        case "umar":
+            console.log("Name is umar")
+        case "raftaar":
+            console.log("Name is raftaar")
+
+        default:
+            console.log("Hii")
+    }
+
+    //Ternary Operator
+    console.log("You can", a < 18 ? "not drive" : "drive")
+
+    let age = prompt("Enter Your Driving age.. ")
+
+    console.log("You can", age < 18 ? "Not Drive" : "Drive")
+
+</script>
+
+</html>

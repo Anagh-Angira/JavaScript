@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //Strigs are th ecollection of charecters
+    let name = "anagh"
+    console.log(name)
+    console.log(name[0])
+    console.log(name[2])
+    console.log(name[3])
+    console.log(name.length)
+
+    let friend = 'prakash'
+    console.log(friend)
+
+    //Templete literal
+    let boy1 = "Pramod"
+    let boy2 = "Nikhil"
+    //Nikhil is a friend of Pramod
+    let sentence = `${boy2} is a friend of ${boy1}`
+    console.log(sentence)
+
+    //Escape Sequence
+
+    let fruit = 'Bana\'na'
+    console.log(fruit)
+    console.log(fruit.length)
+
+    let fruit1 = 'Bana\nna'
+    console.log(fruit1)
+    console.log(fruit1.length)
+
+    let fruit2 = 'Bana\tna'
+    console.log(fruit2)
+    console.log(fruit2.length)
+    let fruit3 = 'Bana\rna'
+    console.log(fruit3)
+    console.log(fruit3.length)
+
+    console.log("--------------------")
+
+    //let name1 = "anagh\""
+    let name1 = "anaGh"
+    console.log(name1.slice(3))
+    console.log(name1.length)
+    console.log(name1.toUpperCase())
+    console.log(name1.toLowerCase())
+    console.log(name1.toLocaleLowerCase())
+
+    let name2 = "Harry"
+    console.log(name2.slice(1,4))
+    //Slice method print 1 to 4-1 = 3 tak charecter in string
+
+    console.log(name2.slice(2))
+
+    let name3 = "rajavisheak"
+    console.log(name3.slice(3))
+
+
+    let name4 = "naman ojha"
+    console.log(name4.replace("ojha", "singh"))
+    console.log(name4.replace("nam","azz"))
+    
+    let name5 = "bilal"
+    let name6 = "Khan"
+    let name7 = name5.concat(name6)
+    console.log(name7)
+
+    let friend3 = "          Meene    "
+    console.log(friend3)
+    console.log(friend3.trim())
+
+    let name8 = "ram"
+    //name9 = name8.concat("Hello"+name8)
+    name9 = "Hello"+name8.concat("Hi")
+    console.log(name9)
+
+    let name10 = "raj"
+    console.log(name10.replace("r","rahim"))
+
+    let a1 = "raj"
+    let a2 = "singh"
+    console.log(a1 + a2)
+
+    //Note All the method will return the new string not modify the 
+    //existing string return the copy of that original String cannot be
+    //changes
+    console.log("har\"".length)
+
+    console.log(a1.includes('s'))
+    console.log(a1.startsWith('r'))
+    console.log(a1.endsWith('j'))
+    let a3 = "AnAGh"
+    console.log(a3.toLowerCase())
+
+    let a4 = "Please give Rs 1000"
+    console.log(a4.slice(14))
+    console.log(a4.replace('s', 't'))
+
+
+
+</script>
+
+</html>

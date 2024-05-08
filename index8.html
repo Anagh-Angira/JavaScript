@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions|JS</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function addTwoNum(x, y) {
+        console.log("Done")
+        return Math.round(1 + (x + y) / 2)
+    }
+
+    const sum = (p, q) => {
+        return p + q
+    }
+
+    const hello = () => {
+        console.log("Hey How are you, I am Fine..")
+    }
+
+    const hello1 = () => {
+
+        return "hii"
+    }
+
+    console.log(hello1())
+
+    console.log(addTwoNum(10, 2))
+    console.log(sum(10, 2))
+    hello()
+
+    const marks = {
+        harry: 98,
+        rohan: 70,
+        aakash: 78,
+        lovish: 87,
+        king: 98
+    }
+
+    //Using For loop
+    for (let i = 0; i < Object.keys(marks).length; i++) {
+        console.log("The marks of " + [Object.keys(marks)[i]] + " ")
+    }
+
+    for (let i in marks) {
+        console.log("Marks of " + i + " are " + marks[i])
+    }
+    let cn = 43
+    let i
+    while (i != cn) {
+        i = prompt("Enter the Number : ")
+        console.log("Try Again.")
+    }
+    console.log("You have entered correct number.")
+
+</script>
+
+</html>

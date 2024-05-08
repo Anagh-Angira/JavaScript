@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive Data Type</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //nn ss bb u remember name
+
+    let a = null;
+    let b = 345;
+    let c = true;
+    let d = BigInt("554") + BigInt("3");
+    let e = "Harry";
+    let f = Symbol("I am a nice symbol");
+    //let g = undefined;
+    let g;
+    console.log(a, b, c, d, e, f, g)
+    console.log(typeof d)
+    console.log(typeof c)
+
+    //Objects in Js It is Key Value Pair
+    //Non Primitive Datatype is Objects
+
+    const item = {
+        "anagh": true,
+        "shubh": false,
+        "lovish": 67,
+        "rohan": undefined
+
+    }
+
+    console.log(item["anagh"])
+    console.log(item["shubh"])
+    console.log(item["ram"])
+    console.log(item["lovish"])
+
+    let x = "anagh"
+    let y = 89
+    console.log(x + y)
+    console.log(x * y) //NaN No Error
+    console.log(x - y) //NaN No Error
+
+    console.log(typeof x + y)
+
+    const aa = {
+        name: "Anagh",
+        section: 1,
+        isPrincipal: false
+    }
+
+    //aa = "Anagh" Provide an error 
+    //aa = 89 Provide an error 
+    // aa = {} We cannot store object also in 
+
+    aa['friend'] = "Simran"
+    aa['name'] = "Nitin"
+    console.log(aa)
+
+
+    const dict = {
+        raj: "name of man",
+        rahul: "name of a Person",
+        kabir: "a movie Kabir Singh",
+        ram: "a name lord",
+        yakka: "Hard work"
+
+
+    }
+    console.log(dict)
+    console.log(dict.yakka)
+    console.log(dict.kabir)
+    console.log(dict["ram"])
+
+    //Operators and Conditionl STATEMENTS
+
+    console.log("OPERATORS IN jS")
+
+    let a1 = 67;
+    let a2 = 8;
+    console.log("a1 + a2 = ", a1 + a2)
+    console.log("a1 - a2 = ", a1 - a2)
+    console.log("a1 * a2 = ", a1 * a2)
+    console.log("a1 / a2 = ", a1 / a2)
+    console.log("a1 % a2 = ", a1 % a2)
+    console.log("a1 power a2 = ", a1 ** a2)
+
+    let a3 = 8;
+    console.log(a3++)// 8
+    console.log(a3) //9
+
+    let a4 = 9;
+    console.log(++a4)
+    console.log(a4)
+
+    let a5 = 8;
+    console.log(a5--)
+    console.log(a5)
+
+    let a6 = 8;
+    console.log(--a6)
+    console.log(a6)
+
+
+    //Assignment Operators
+
+    a2 = 10
+    console.log(a2)
+    console.log(a2 += 5) //15
+    console.log(a2 *= 5) //15 * 5
+    console.log(a2 /= 5)
+    console.log(a2 -= 5)
+    console.log(a2 **= 5)
+
+    //Comparision Operator
+    let comp1 = 6;
+    let comp2 = 7;
+
+    console.log(comp1 == comp2)
+    console.log(comp1 != comp2)
+    console.log("hII", comp1 > comp2)
+
+
+
+    let comp3 = 9;
+    let comp4 = "9"
+
+    console.log(comp1 == comp2) //True
+    console.log(comp3 === comp4) // False
+    console.log(comp3 !== comp4)
+
+    //Logical Operator
+
+    let z1 = 6;
+    let z2 = 7;
+
+    console.log(z1 < z2 && z1 == 6)
+    console.log(z1 < z2 && z1 == 4)
+    console.log(z1 < z2 || z1 == 4)
+    console.log(!false)
+    console.log(!true)
+    
+    /*
+    Multiline Comment
+    */
+
+
+
+
+
+</script>
+
+</html>

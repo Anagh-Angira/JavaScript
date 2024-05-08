@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    //Array Systenx
+    let marks_class = [91, 82, 64, 78, null, false, "not given"]
+    console.log(marks_class)
+    console.log(marks_class[5])
+    console.log(marks_class[3])
+    console.log(marks_class[0])
+    console.log(marks_class[6])
+    console.log(marks_class.length)
+    marks_class[7] = 87
+    marks_class[8] = 71
+    marks_class[0] = 96
+    console.log(marks_class)
+
+    console.log(marks_class[7])
+    console.log(typeof marks_class)
+
+    //Arrays are mutables, in js arrays are objects
+    //Strings are imutables
+
+    let num = [1, 2, 3, 44, 55, 6]
+    let b = num.toString()
+    console.log(b, typeof b)
+    let c = num.join("_") //return string
+    console.log(c, typeof c)
+
+    //pop method change in same array
+
+    let r = num.pop()
+    console.log(r) //return poped number
+
+    console.log(num)
+
+    r = num.push(56) //insert at the end
+    console.log(r)
+    console.log(num)
+
+    let s = num.shift()
+    console.log(s, num) //modify original array
+
+    s = num.unshift(888)
+    console.log(num) //return new array lenght
+
+
+    let num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let num2 = [11, 12, 13, 14, 15, 35]
+    let num3 = [111, 112, 113, 114, 115, 325]
+    console.log(num1)
+    delete num1[0]
+    console.log(num1) // fill with empty
+    console.log(num1.length) //lenght cannot be affected lenght will be same
+
+    let newArray = num1.concat(num2, num3) //create a new array old array not changes
+    console.log(newArray)
+
+    // Acending order
+    let compare = (a, b) => {
+        return a - b
+    }
+    // Decending order
+    let compare1 = (a, b) => {
+        return b - a
+    }
+    let num4 = [7, 4, 2, 6, 1, 32, 22, 5, 98, 77]
+    console.log(num4.sort(compare1)) //modify the original array it sort alfabetically treated as string
+    console.log(num4)
+    console.log(num4.reverse())
+    //Splice and Slice in JavaScript
+
+    let spl = [551, 22, 3, 14, 5, 6, 7, 8, 229]
+    spl.splice(2, 3, 1021, 1022, 1023, 1024)
+    console.log(spl) //(9) [551, 22, 1021, 1022, 1023, 6, 7, 8, 229] return the deleted array element
+
+    let sli = [551, 22, 3, 14, 5, 6, 7, 8, 229]
+    console.log(sli.slice(2))
+    console.log(sli.slice(2, 7)) //create the new array and return
+
+    //Traversing the Array
+
+    let newarr = [3, 54, 1, 2, 4, 5]
+    for (let i = 0; i < newarr.length; i++) {
+        console.log(newarr[i])
+    }
+
+    newarr.forEach((element) => {
+
+        console.log(element * element)
+    })
+
+    //Array.from
+
+    let n = "Anagh"
+    let arrx = Array.from(n)
+    console.log(arrx)
+
+    //For-of Loop in newarr
+    for (let i of newarr) {
+        console.log(i)
+    }
+    //for in
+    for (let i in newarr) { //give the index or key in javascript
+        console.log(i)
+    }
+    //Map- filter and Reduce Function in JavaScript
+    let m = [45, 23, 21]
+    //console.log(m)
+
+    //map function created a new array and return it (new array)
+    //for each is used for operation on other element
+    let aman = m.map((item, index, array) => {
+        console.log(item)
+        //return item+1
+        return item + index
+    })
+    console.log(aman)
+
+    //Array filter method
+
+    let arr4 = [45, 23, 21, 0, 3, 5, 32]
+    let smallele = arr4.filter((a) => {
+        return a < 10
+    })
+    console.log(smallele)
+    //Reduce Function
+
+    let arr5 = [1, 2, 3, 5, 2, 1]
+    let newarr5 = arr5.reduce((h1, h2) => {
+        return h1 + h2
+    })
+    console.log(newarr5)
+
+    //Function can be written as variable in js
+    const reduce_func = (h1, h2) => {
+        return h1 + h2
+    }
+    let newarr6 = arr5.reduce(reduce_func)
+    console.log(newarr6)
+    let arr = [1, 2, 3, 4, 5, 6, 7, 83]
+    let a;
+    do {
+        let a = prompt("Enter the Number")
+        a = Number.parseInt(a)
+        arr.push(a)
+    } while (a != 0);
+    console.log(arr)
+
+    //Use the filter function number is divisible
+    let arr12 = [1, 20, 3, 42, 5, 6, 7, 83]
+    let nunnu = arr12.filter((x) => {
+        return x % 2 == 0
+    });
+
+    //Use Map Function
+    console.log(nunnu)
+    let arr13 = [1, 20, 3, 42, 5, 6, 7, 83]
+    let tunnu = arr13.map((x) => {
+        return x * x
+    });
+    console.log(tunnu)
+
+    //Use Reduce Function
+    let arr14 = [1, 2, 3, 4]
+    let nunnu1 = arr14.reduce((x1, x2) => {
+
+        return x1 * x2
+    })
+    console.log(nunnu1)
+</script>
+
+</html>
